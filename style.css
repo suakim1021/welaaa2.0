@@ -1,0 +1,325 @@
+:root {
+    --welaaa-lightgray: #F9F9F9;
+    --welaaa-green: #56E893;
+    --welaaa-black: #484A49;
+    --welaaa-gray: #898989;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*user-select: none;*/
+}
+
+body {
+    /*user-select: none;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 내비게이션 스타일 설정 */
+.h_nav {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9;
+}
+.h_nav .menu {
+    font-family: Noto Sans KR;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--welaaa-black);
+}
+.h_nav .logo {
+    float: left;
+    margin-left: 35px;
+    margin-right: 44px;
+    line-height: 80px;
+}
+.h_nav .menu a {
+    color: var(--welaaa-black);
+}
+.h_nav .menu ul li {
+    float: left;
+    margin-right: 35px;
+}
+.h_nav .menu.left {
+    line-height: 75px;
+}
+.h_nav .menu.right {
+    float: left;
+    line-height: 75px;
+}
+.h_nav .menu.login {
+    float: right;
+    margin-right: 35px;
+}
+.h_nav .menu.login ul li {
+    font-size: 14px;
+    height: 33px;
+    padding: 0px 17.5px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 1px solid var(--welaaa-green);
+    line-height: 29px;
+    margin-top: 25px;
+}
+.h_nav .menu.login ul li:first-child {
+    background-color: var(--welaaa-green);
+    margin-right: 9px;
+}
+
+
+.main_wrap {
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+}
+
+/* 구독 버튼 */
+.subscribe_button {
+    width: 496px;
+    height: 78px;
+    border-radius: 50px;
+    background-color: rgba(72, 74, 73, .9);
+    backdrop-filter: blur(15px);
+    box-sizing: border-box;
+    align-items: center;
+    vertical-align: middle;
+    position: fixed;
+    bottom: 0.1vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: .3s;
+    cursor: pointer;
+}
+.subscribe_button:hover {
+    background-color: rgba(45, 46, 45, 1);
+}
+.subscribe_button h3 {
+    font-family: Noto Sans KR;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: 78px;
+}
+
+/*섹션별 공통 스타일 설정*/
+.title {
+    font-family: Noto Sans KR;
+    padding-top: 150px;
+
+}
+.title h2 {
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    line-height: 80px;
+    margin-bottom: 15px;
+}
+.title p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/*배경 라이트그레이 섹션*/
+.index, .kids, .pormotion, .membership, .faq {
+    min-height: 862px;
+    background-color: var(--welaaa-lightgray);
+}
+.index h2, .kids h2, .pormotion h2, .membership h2, .faq h2{
+    color: var(--welaaa-black);
+}
+.index p, .kids p, .pormotion p, .membership p, .faq p{
+    color: var(--welaaa-gray);
+}
+
+/*배경 그린 섹션*/
+.aitts, .uiux, .review {
+    min-height: 862px;
+    background-color: var(--welaaa-green);
+}
+.aitts h2, .uiux h2, .review h2 {
+    color: #fff;
+}
+.aitts p, .uiux p, .review p {
+    color: #fff;
+}
+
+/*배경 화이트 섹션*/
+.ebook, .content {
+    min-height: 862px;
+    background-color: #fff;
+}
+.ebook h2, .content h2 {
+    color: var(--welaaa-black);
+}
+.ebook p, .content p {
+    color: var(--welaaa-gray);
+}
+.section .title {
+    text-align: center;
+}
+
+
+/*윌라가 확 달라졌습니다*/
+.main_wrap .index {
+    position: relative;
+}
+.main_wrap .index .decoimg .headphone {
+    position: absolute;
+    top: 353px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main_wrap .index .decoimg .book {
+    position: absolute;
+    top: 1100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main_wrap .index .decotxt {
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+/* 인덱스 더보기 버튼 설정 */
+.main_wrap .index .decoimg .indexbutton {
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--welaaa-black);
+    border: none;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 20px 33px;
+    cursor: pointer;
+    position: relative;
+    width: 80px; /* 기본 버튼 크기 */
+    height: 80px; /* 기본 버튼 높이 */
+    transition: width 0.3s ease, height 0.3s ease; /* 크기 변화 애니메이션 */
+    overflow: hidden; /* 넘치는 텍스트를 숨김 */
+    display: flex;
+    justify-content: center;
+}
+.main_wrap .index .decoimg .indexbutton .icon {
+    opacity: 1;
+    visibility: visible;
+}
+.main_wrap .index .decoimg .indexbutton .txt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.main_wrap .index .decoimg .indexbutton:hover .icon {
+    opacity: 0;
+    visibility: hidden;
+}
+.main_wrap .index .decoimg .indexbutton:hover.more1 {
+    width: 370px; /* 마우스를 올리면 버튼이 커지게 설정 */
+}
+.main_wrap .index .decoimg .indexbutton:hover.more2 {
+    width: 334px; /* 마우스를 올리면 버튼이 커지게 설정 */
+}
+.main_wrap .index .decoimg .indexbutton:hover.more3 {
+    width: 215px; /* 마우스를 올리면 버튼이 커지게 설정 */
+}
+.main_wrap .index .decoimg .indexbutton:hover span {
+    opacity: 1;
+    visibility: visible;
+}
+/*버튼 위치 설정*/
+.indexbutton.more1 {
+    position: absolute;
+    top: -230px;
+    left: 460px;
+}
+.indexbutton.more2 {
+    position: absolute;
+    top: -700px;
+    left: 250px;
+}
+.indexbutton.more3 {
+    position: absolute;
+    top: -280px;
+    left: 750px;
+}
+
+
+/*세계 최초 윌라 개발 AI*/
+.main_wrap .aitts {
+    position: relative;
+}
+/*핸드폰 이미지/비디오 섹션*/
+.main_wrap .aitts .phoneimg {
+    position: absolute;
+    top: 455px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1050px;
+    height: 560px;
+    background-image: url(images/phone_horizontal.png);
+    background-repeat: no-repeat;
+    background-position: -10px -10px;
+}
+.main_wrap .aitts .phoneimg .videowrap {
+    width: 1005px;
+    height: 491px;
+    background-color: var(--welaaa-gray);
+    overflow: hidden;
+    border-radius: 50px;
+    margin-top: 33px;
+    margin-left: 24px;
+    
+}
+/*정보 카드*/
+.main_wrap .aitts .infocard {
+    width: 1400px;
+    margin: 0 auto;
+    padding-top: 720px;
+    padding-bottom: 200px;
+}
+.main_wrap .aitts .infocard ul {
+    display: flex;
+    justify-content: space-between;
+}
+.main_wrap .aitts .infocard ul li {
+    width: 445px;
+    height: 610px;
+    border-radius: 25px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 44px 47px;
+}
+.main_wrap .aitts .infocard ul li h3 {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 17px;
+    color: var(--welaaa-black);
+}
+.main_wrap .aitts .infocard ul li p {
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--welaaa-gray);
+}
+
+.main_wrap .aitts .infocard ul li:nth-child(2) {
+    margin-top: 80px;
+}
