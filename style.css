@@ -475,16 +475,66 @@ a {
 }
 
 /*아이들 독서 고민도 윌라 키즈로 이제 끝!*/
-.main_wrap .kids .left_imgbox {
+.kids {
+    height: 3100px;
+}
+.kids .left_imgbox {
+    float: left;
     margin-left: 190px;
     margin-top: 50px;
-    
 }
-.main_wrap .kids .left_imgbox ul li {
+.kids .left_imgbox ul li {
     margin-bottom: 58px;
 }
-.main_wrap .kids .left_imgbox ul li:last-child {
+.kids .left_imgbox ul li:last-child {
     margin-bottom: 0;
+}
+
+.kids .right_textbox {
+    float: right;
+    margin-right: 290px;
+    margin-top: 180px;
+    /* border: 1px solid red; */
+    width: 780px;
+    height: 2300px;
+}
+.kids .right_textbox .textballoon {
+    position: relative;
+}
+.kids .right_textbox .textballoon .text {
+    position: absolute;
+    top: 55px;
+    left: 100px;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.kids .right_textbox .textballoon .text.kidshow {
+    opacity: 1;
+}
+.kids .right_textbox .textballoon .text .point {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--welaaa-darkgreen); 
+    
+    margin-bottom: 25px;
+}
+.kids .right_textbox .textballoon .text .maintext {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--welaaa-black);
+    
+    margin-bottom: 20px;
+}
+.kids .right_textbox .textballoon .text .desc {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--welaaa-gray);
+    
+    margin-bottom: 20px;
 }
 
 /*개선된 기능과 UI로 독서를 더 편하게!*/

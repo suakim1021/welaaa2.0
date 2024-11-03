@@ -232,6 +232,55 @@
                 </ul>
             </div>
 
+            <div class="right_textbox">
+                <div class="textballoon">
+                    <img src="images/textbox.png" alt="">
+                <div class="text kidspoint1">
+                    <div class="point">POINT 01</div>
+                    <div class="maintext">
+                        읽으면서 듣는 독서
+                    </div>
+                    <div class="desc">
+                        시각과 청각을 모두 활용하는 독서 경험으로
+                        <br>책에 몰두하는 습관을 만들어 주세요
+                    </div>
+                </div>
+                <div class="text kidspoint1">
+                    <div class="point">POINT 02</div>
+                    <div class="maintext">
+                        엄마는 눈으로, 아이는 귀로
+                        <br>함께 즐기는 독서시간
+                    </div>
+                    <div class="desc">
+                        아이가 잠드는 시간, 엄마는 전자책으로 소설을, 아이에게는
+                        <br>오디오 동화책을 들려주세요. 엄마의 시간이 2배가 됩니다.
+                    </div>
+                </div>
+                <div class="text kidspoint1">
+                    <div class="point">POINT 03</div>
+                    <div class="maintext">
+                        무얼 읽나 고민 끝!
+                        <br>윌라가 골라주는 큐레이션
+                    </div>
+                    <div class="desc">
+                        각양각색 관심사, 다양한 상황에 맞는
+                        <br>큐레이션을 제공합니다.
+                    </div>
+                </div>
+                <div class="text kidspoint1">
+                    <div class="point">POINT 04</div>
+                    <div class="maintext">
+                        아이 성장에 맞는 독서
+                        <br>윌라가 다 정해드려요
+                    </div>
+                    <div class="desc">
+                        0세부터 12세까지 세분화된
+                        <br>연령별, 학년별 맞춤 콘텐츠를 이용하세요
+                    </div>
+                </div>
+                </div>
+            </div>
+
         </div>
 
         <!--UIUX개편 섹션-->
@@ -330,7 +379,7 @@
             <div class="infocard scroll-spy">
                 <ul>
                     <div class="tilt" data-tilt>
-                        <li class="magic-slide to-down delay-1">
+                        <li class="magic-slide to-down delay-2">
                             <h3>월간 통합 멤버십</h3>
                             <p>이게 AI 목소리라고?
                                 <br>실제 사람 목소리처럼 자연스럽다!
@@ -342,7 +391,7 @@
                     </div>
                     
                     <div class="tilt" data-tilt>
-                        <li class="magic-slide to-up delay-1">
+                        <li class="magic-slide to-up delay-2">
                             <h3>2배속을 1배속처럼
                                 <br>AI 배속
                             </h3>
@@ -356,7 +405,7 @@
                     </div>
 
                     <div class="tilt" data-tilt>
-                        <li class="magic-slide to-down delay-1">
+                        <li class="magic-slide to-down delay-2">
                             <h3>원하는 목소리로
                                 <br>즐기는 독서
                             </h3>
@@ -596,6 +645,50 @@
                 }
             });
         });
+
+
+        // 키즈관 텍스트박스 스크롤 애니메이션
+    document.addEventListener('DOMContentLoaded', () => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const img = document.querySelector('.right_textbox .textballoon');
+
+        gsap.to(img, {
+            y: () => document.querySelector('.right_textbox').offsetHeight - img.offsetHeight,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.right_textbox',
+                start: 'top top',// .right_textbox의 top이 뷰포트 top에 닿을 때 애니메이션 시작
+                end: 'bottom bottom',// .right_textbox의 bottom이 뷰포트 bottom에 닿을 때 애니메이션 종료
+                scrub: true,// 스크롤 위치에 따라 애니메이션이 연속적으로 적용됨
+            }
+        });
+
+        // 이미지 위치에 따라 .kidshow 클래스를 토글하는 애니메이션
+        const points = document.querySelectorAll('.textballoon .text');
+        const images = document.querySelectorAll('.left_imgbox img');
+
+        images.forEach((image, index) => {
+            ScrollTrigger.create({
+                trigger: image,
+                start: "top center",  // 이미지가 화면 중앙에 올 때
+                end: "bottom center", // 이미지가 화면을 벗어나기 전까지
+                onEnter: () => {
+                    points.forEach(p => p.classList.remove('kidshow')); // 모든 텍스트 숨기기
+                    points[index].classList.add('kidshow'); // 현재 이미지에 대응하는 텍스트 보여주기
+                },
+                onEnterBack: () => {
+                    points.forEach(p => p.classList.remove('kidshow'));
+                    points[index].classList.add('kidshow');
+                },
+                scrub: true,
+                    });
+                });
+            });
+
+        
+
+
 
         //faq 토글
         document.addEventListener('DOMContentLoaded', () => {
