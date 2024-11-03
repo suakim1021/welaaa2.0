@@ -9,10 +9,10 @@
 <body>
     <!--내비게이션-->
     <div class="h_nav">
-        <div class="logo"><h1><img src="images/logo_green.png" alt=""></h1></div>
+        <div class="logo"><a href="index.html"><h1><img src="images/logo_white.png" alt=""></h1></a></div>
         <div class="menu left">
             <ul>
-                <li><a href="">윌라 소개</a></li>
+                <li><a href="index.html">윌라 소개</a></li>
                 <li><a href="">전자책</a></li>
                 <li><a href="">오디오북</a></li>
                 <li><a href="">키즈관</a></li>
@@ -39,11 +39,19 @@
 
     <!--메인 콘텐츠 섹션-->
     <div class="main_wrap">
-        <div class="video section" id="#video">
-            
+        <!--히어로 섹션-->
+        <div class="hero section scroll-spy" id="#hero">
+            <div class="typo">
+                <h1 class="magic-slide to-right">
+                    <span class="mini_headphone">귀</span>깔나게 달라진</h1>
+                <h1 class="magic-slide to-right delay-1">
+                    윌라 <span class="mini_book">오디오북</span></h1>
+            </div>  
         </div>
-        <div class="index section" id="#index">
-            <div class="title">
+
+        <!--인덱스 섹션-->
+        <div class="index section scroll-spy" id="#index">
+            <div class="title magic-slide to-down">
                 <h2>윌라가 확 달라졌습니다!
                 <br>윌라 2.0 업데이트</h2>
             </div>
@@ -52,14 +60,18 @@
             </div>
             <div class="decoimg">
                 <div class="headphone">
-                        <img src="images/headphone.png" alt="">
+                    <div class="img_ani magic-slide to-up delay-1">
+                        <img class="one" src="images/headphone.png" alt="">
                         <button class="indexbutton more1">
                             <span class="icon"><img src="images/icon_plus.png" alt=""></span>
                             <span class="txt">AI로 다양해진 오디오북</span>
                         </button>
+                    </div>
+                        
                 </div>
                 <div class="book">
-                        <img src="images/book.png" alt="">
+                    <div class="img_ani magic-slide to-up delay-3">
+                        <img class="two" src="images/book.png" alt="">
                         <button class="indexbutton more2">
                             <span class="icon"><img src="images/icon_plus.png" alt=""></span>
                             <span class="txt">17만권 전자책 서비스</span>
@@ -68,131 +80,538 @@
                             <span class="icon"><img src="images/icon_plus.png" alt=""></span>
                             <span class="txt">키즈관 신설</span>
                         </button>
+                    </div>
+                        
                 </div>
             </div>
             
-
         </div>
+
+        <!--AI기능 소개 섹션-->
         <div class="aitts section" id="#aitts">
-            <div class="title">
-                <h2>세계 최초!
+            <div class="title scroll-spy">
+                <h2 class="magic-slide to-down">세계 최초!
                     <br>윌라에서 개발한 독서 AI</h2>
-            <p>전문 성우와 독서 앰버서더의 목소리를 학습한 AI
+            <p class="magic-slide to-down delay-1">전문 성우와 독서 앰버서더의 목소리를 학습한 AI
                 <br>독서에 대한 끊임없는 고민으로 탄생한 윌라의 신기술입니다</p>
             </div>
             
             <div class="phoneimg">
                 <!--<img src="images/phone_horizontal.png" alt="">-->
                 <div class="videowrap">
-                    <video src=""></video>
+                    <video src="video/ai_tts.webm" controls></video>
                 </div>
             </div>
 
-            <div class="infocard">
+            <div class="infocard scroll-spy">
                 <ul>
-                    <li>
-                        <h3>진짜 사람같은
-                            <br>AI TTS
-                        </h3>
-                        <p>이게 AI 목소리라고?
-                            <br>실제 사람 목소리처럼 자연스럽다!
-                        </p>
-                        <div class="infographic">
+                    <div class="tilt1" data-tilt>
+                        <li class="magic-slide to-down delay-0">
+                            <h3>진짜 사람같은
+                                <br>AI TTS
+                            </h3>
+                            <p>이게 AI 목소리라고?
+                                <br>실제 사람 목소리처럼 자연스럽다!
+                            </p>
+                            <div class="infographic">
+    
+                            </div>
+                        </li>
+                    </div>
+                    
+                    <div class="tilt2" data-tilt>
+                        <li class="magic-slide to-up delay-1">
+                            <h3>2배속을 1배속처럼
+                                <br>AI 배속
+                            </h3>
+                            <p>2배속을 1배속처럼 듣기
+                                <br>아무리 빨라도 명확하게 잘 들린다!
+                            </p>
+                            <div class="infographic">
+                                
+                            </div>
+                        </li>
+                    </div>
 
-                        </div>
-                    </li>
-                    <li>
-                        <h3>2배속을 1배속처럼
-                            <br>AI 배속
-                        </h3>
-                        <p>2배속을 1배속처럼 듣기
-                            <br>아무리 빨라도 명확하게 잘 들린다!
-                        </p>
-                        <div class="infographic">
-                            
-                        </div>
-                    </li>
-                    <li>
-                        <h3>원하는 목소리로
-                            <br>즐기는 독서
-                        </h3>
-                        <p>전문 성우, AI TTS 등
-                            <br>원하는 목소리로 책을 듣는다!
-                        </p>
-                        <div class="infographic">
-                            
-                        </div>
-                    </li>
+                    <div class="tilt3" data-tilt>
+                        <li class="magic-slide to-down delay-2">
+                            <h3>원하는 목소리로
+                                <br>즐기는 독서
+                            </h3>
+                            <p>전문 성우, AI TTS 등
+                                <br>원하는 목소리로 책을 듣는다!
+                            </p>
+                            <div class="infographic">
+                                
+                            </div>
+                        </li>
+                    </div>
                 </ul>
             </div>
 
 
         </div>
-        <div class="ebook section" id="#ebook">
-            <div class="title">
-                <h2>압도적인 콘텐츠!
+
+        <!--전자책 소개 섹션-->
+        <div class="ebook section scroll-spy" id="#ebook">
+            <div class="title ">
+                <h2 class="magic-slide to-down delay-0">압도적인 콘텐츠!
                     <br>전자책 17만개 업데이트
                 </h2>
-            <p>매월 업데이트되는 최신 인기 도서와 베스트셀러
+            <p class="magic-slide to-down delay-1">매월 업데이트되는 최신 인기 도서와 베스트셀러
                 <br>맞춤형 뷰어부터 초고품질 윌라 AI TTS까지 제공합니다</p>
             </div>
 
+            <div class="tag-scrollers magic-slide to-down delay-2">
+                <div class="tag-scroller">
+                    <ul class="tag-list">
+                        <li><img src="images/book/1.jpg" alt=""></li>
+                        <li><img src="images/book/2.jpg" alt=""></li>
+                        <li><img src="images/book/3.jpg" alt=""></li>
+                        <li><img src="images/book/4.jpg" alt=""></li>
+                        <li><img src="images/book/5.jpg" alt=""></li>
+                        <li><img src="images/book/6.jpg" alt=""></li>
+                        <li><img src="images/book/7.jpg" alt=""></li>
+                        <li><img src="images/book/8.jpg" alt=""></li>
+                        <li><img src="images/book/9.jpg" alt=""></li>
+                        <li><img src="images/book/10.jpg" alt=""></li>
+                        <li><img src="images/book/11.jpg" alt=""></li>
+                        <li><img src="images/book/12.jpg" alt=""></li>
+                        <li><img src="images/book/13.jpg" alt=""></li>
+                        <li><img src="images/book/14.jpg" alt=""></li>
+                        <li><img src="images/book/15.jpg" alt=""></li>
+                        <li><img src="images/book/16.jpg" alt=""></li>
+                        <li><img src="images/book/17.jpg" alt=""></li>
+                        <li><img src="images/book/18.jpg" alt=""></li>
+                        <li><img src="images/book/19.jpg" alt=""></li>
+                        <li><img src="images/book/20.jpg" alt=""></li>
+                        <li><img src="images/book/21.jpg" alt=""></li>
+                        <li><img src="images/book/22.jpg" alt=""></li>
+                        <li><img src="images/book/23.jpg" alt=""></li>
+                        <li><img src="images/book/24.jpg" alt=""></li>
+                        <li><img src="images/book/25.jpg" alt=""></li>
+                        <li><img src="images/book/26.jpg" alt=""></li>
+                        <li><img src="images/book/27.jpg" alt=""></li>
+                        <li><img src="images/book/28.jpg" alt=""></li>
+                        <li><img src="images/book/29.jpg" alt=""></li>
+                        <li><img src="images/book/30.jpg" alt=""></li>
+                        <li><img src="images/book/31.jpg" alt=""></li>
+                        <li><img src="images/book/32.jpg" alt=""></li>
+                        <li><img src="images/book/33.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
 
         </div>
+
+        <!--키즈관 섹션-->
         <div class="kids section" id="#kids">
-            <div class="title">
-                <h2>아이들 독서 고민도
+            <div class="title scroll-spy">
+                <h2 class="magic-slide to-down delay-0">
+                    아이들 독서 고민도
                     <br>윌라 키즈로 이제 끝!</h2>
-            <p>1만권 이상 콘텐츠 보유, 국내 1위 키즈 오디오북
+            <p class="magic-slide to-down delay-1">
+                1만권 이상 콘텐츠 보유, 국내 1위 키즈 오디오북
                 <br>윌라는 든든한 육아 도우미입니다</p>
             </div>
 
+            <div class="left_imgbox">
+                <ul>
+                    <li>
+                        <img src="images/kids_1.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/kids_2.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/kids_3.png" alt="">
+                    </li>
+                    <li>
+                        <img src="images/kids_4.png" alt="">
+                    </li>
+                </ul>
+            </div>
+
         </div>
+
+        <!--UIUX개편 섹션-->
         <div class="uiux section" id="#uiux">
-            <div class="title">
-                <h2>개선된 기능과 UI로
+            <div class="title scroll-spy">
+                <h2 class="magic-slide to-down delay-0">
+                    개선된 기능과 UI로
                     <br>독서를 더 편하게!</h2>
-            <p>윌라 2.0의 새로워진 전자책으로
+            <p class="magic-slide to-down delay-1">
+                윌라 2.0의 새로워진 전자책으로
                 <br>더 편리한 독서 라이프를 경험하세요</p>
             </div>
 
+            <div class="infocard scroll-spy">
+                <ul>
+                    <div class="tilt" data-tilt>
+                        <li class="magic-slide to-down delay-0">
+                            <h3>
+                                오프라인 환경 지원
+                            </h3>
+                            <p>다운로드한 콘텐츠를 어디에서나
+                                <br>인터넷 연결 없이 이용하실 수 있어요
+                            </p>
+                            <div class="infographic">
+    
+                            </div>
+                        </li>
+                    </div>
+                    
+                    <div class="tilt" data-tilt>
+                        <li class="magic-slide to-up delay-1">
+                            <h3>
+                                애플 카플레이 &
+                                <br>안드로이드 오토
+                            </h3>
+                            <p>차와 연결해서 운전 중에
+                                <br>오디오 북을 편하게 재생할 수 있어요
+                            </p>
+                            <div class="infographic">
+                                
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="tilt" data-tilt>
+                        <li class="magic-slide to-down delay-2">
+                            <h3>
+                                들으면서
+                                <br>읽는 독서
+                            </h3>
+                            <p>전자책을 읽으면서 고퀄리티
+                                <br>오디오북을 동시에 즐길 수 있어요
+                            </p>
+                            <div class="infographic">
+                                
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
         </div>
+
+        <!--콘텐츠 섹션-->
         <div class="content section" id="#content">
 
         </div>
-        <div class="pormotion section" id="#promotion">
+
+        <!--프로모션 섹션-->
+        <div class="pormotion section scroll-spy" id="#promotion">
             <div class="title">
-                <h2>무료로 부담없이
+                <h2 class="magic-slide to-down delay-0">
+                    무료로 부담없이
                     <br>시작해 보세요!</h2>
-            <p>신규 멤버십 가입 시 최초 1회 구독료 0원
+            <p class="magic-slide to-down delay-1">
+                신규 멤버십 가입 시 최초 1회 구독료 0원
                 <br>부담없이 윌라를 사용해 보세요</p>
+            </div>
+            <div class="promo_img magic-slide to-down delay-2">
+                <img class="bg" src="images/free.png" alt="">
+                <img class="particle1 one" src="images/free_1.png" alt="">
+                <img class="particle2 two" src="images/free_2.png" alt="">
             </div>
 
         </div>
+
+        <!--멤버십 섹션-->
         <div class="membership section" id="#membership">
-            <div class="title">
-                <h2>내 마음대로 골라 쓰는 윌라</h2>
-            <p>다양한 멤버십으로 내 취향에 맞게
+            <div class="title scroll-spy">
+                <h2 class="magic-slide to-down delay-0">
+                    내 마음대로 골라 쓰는 윌라</h2>
+            <p class="magic-slide to-down delay-1">
+                다양한 멤버십으로 내 취향에 맞게
                 <br>골라서 구독해 보세요</p>
             </div>
+            <div class="infocard scroll-spy">
+                <ul>
+                    <div class="tilt" data-tilt>
+                        <li class="magic-slide to-down delay-1">
+                            <h3>월간 통합 멤버십</h3>
+                            <p>이게 AI 목소리라고?
+                                <br>실제 사람 목소리처럼 자연스럽다!
+                            </p>
+                            <div class="button">
+                                <button>1개월 무료 시작하기</button>
+                            </div>
+                        </li>
+                    </div>
+                    
+                    <div class="tilt" data-tilt>
+                        <li class="magic-slide to-up delay-1">
+                            <h3>2배속을 1배속처럼
+                                <br>AI 배속
+                            </h3>
+                            <p>2배속을 1배속처럼 듣기
+                                <br>아무리 빨라도 명확하게 잘 들린다!
+                            </p>
+                            <div class="button">
+                                <button>시작하기</button>
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="tilt" data-tilt>
+                        <li class="magic-slide to-down delay-1">
+                            <h3>원하는 목소리로
+                                <br>즐기는 독서
+                            </h3>
+                            <p>전문 성우, AI TTS 등
+                                <br>원하는 목소리로 책을 듣는다!
+                            </p>
+                            <div class="button">
+                                <button>시작하기</button>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
         </div>
+
+        <!--사용자 후기 섹션-->
         <div class="review section" id="#review">
-            <div class="title">
-                <h2>윌라 회원님들의
+            <div class="title scroll-spy">
+                <h2 class="magic-slide to-down delay-0">
+                    윌라 회원님들의
                     <br>생생한 이용 후기를 확인하세요</h2>
             </div>
         </div>
-        <div class="faq section" id="#faq">
-            <div class="title">
-                <h2>자주 묻는 질문</h2>
+
+        <!--자주 묻는 질문 섹션-->
+        <div class="faq section scroll-spy" id="#faq">
+            <div class="title magic-slide to-down delay-0">
+                <h2>
+                    자주 묻는 질문</h2>
             </div>
 
+            <ul class="faq_list magic-slide to-down delay-1">
+                <li>
+                    <div class="layout">
+                        <h5>가입할 수 있는 멤버십은 어떤 게 있나요?</h5>
+                        <img src="images/icon_plus_gray.png" alt="">
+                    </div>
+                    <p>
+                        대체불가한 대한민국 대표 독서 플랫폼 윌라입니다:D
+                        <br>현재 구독 가능한 멤버십은 윌라 통합 멤버십입니다!
+                        <br>윌라 통합 멤버십을 필수적으로 구독해야 하는 이유
+                        <br>- 세계 최초로 개발한 윌라 AI TTS로 전자책은 물론 오디오북, 클래스까지 무제한 즐길 수 있어요.
+                        <br>- 키즈 오디오북 국내 1위, 윌라 키즈 전용관에서는 연령 및 학년별 맞춤 콘텐츠가 준비되어 있어요.
+                        <br>- 가족 공유 서비스로 한 계정 당 한 개의 계정을 초대할 수 있어요.
+                        <br>윌라는 회원님들의 독서를 응원합니다!
+                    </p>
+                </li>
+                <li>
+                    <div class="layout">
+                        <h5>무료 체험 혜택은 누구나 받을 수 있나요?</h5>
+                        <img src="images/icon_plus_gray.png" alt="">
+                    </div>
+                    <p>
+                        윌라를 처음 이용하시는 회원이라면 누구나 무료 혜택을 받으실 수 있어요.
+                        <br>지금 가입하시고 윌라의 모든 전자책/오디오북/웹소설/클래스를 아무 제약 없이 무제한으로 즐겨보세요.
+                    </p>
+                </li>
+                <li>
+                    <div class="layout">
+                        <h5>무료 체험 기간 이후 의무 사용 기간이 있나요?</h5>
+                        <img src="images/icon_plus_gray.png" alt="">
+                    </div>
+                    <p>
+                        무료 혜택 이용 중에도 의무 사용기간이 없으며, 언제든지 간편하게 해지를 하실 수 있어요.
+                        <br>유료 멤버십으로 전환되기 전날까지 멤버십을 해지 하시면 멤버십 금액이 청구되지 않으니 안심하고 가입하세요.
+                    </p>
+                </li>
+                <li>
+                    <div class="layout">
+                        <h5>멤버십 자동 결제 해지는 어떻게 하나요?</h5>
+                        <img src="images/icon_plus_gray.png" alt="">
+                    </div>
+                    <p>
+                        윌라를 찾아주셔서 기뻤는데 떠나신다고 하니 아쉬워요.
+                        <br>가입방법에 따라, 멤버십 해지 방법이 달라요.
+                        <br>**윌라 멤버십 해지 방법**
+                        <br>- 윌라 앱 → 오른쪽 상단 프로필 → 이용 중인 멤버십 (예시. 윌라 통합 멤버십>) 클릭 , → 결제 수단 확인 → [해지 신청]
+                        <br>- 윌라 웹 → 로그인 → 왼쪽 상단 三 → 계정/구매관리 → 결제 수단 확인 → [해지 신청]
+                        <br>-해지 신청완료, 결제중지로 확인되시면 정상 해지가 된 것입니다.
+                        <br>-해지 신청이 아닌, 만료일이 확인되시면 유료 결제 전환되지 않고 만료일 이후 즉시 종료됩니다.
+                        <br>-해지하시더라도 만료 기간까지 멤버십 이용 가능합니다.
+                        <br>-멤버십 가입 후 별도의 해지 없이 APP을 삭제하실 경우, 자동결제 해지를 의미하는 것이 아니기때문에 결제될 수 있으므로 꼭 위의 경로로 해지해주세요.
+                        <br>-결제 수단에 따라서 안내되는 해지 방법대로 진행하셔야 정상 해지 처리됨을 안내드립니다 :D
+                    </p>
+                </li>
+                <li>
+                    <div class="layout">
+                        <h5>결제됐는데, 이용하지는 않았어요. 환불이 가능할까요?</h5>
+                        <img src="images/icon_plus_gray.png" alt="">
+                    </div>
+                    <p>
+                        결제 후, 유료 콘텐츠 이용 내역이 없으시면 환불 가능합니다.
+                        <br>(결제 후 7일 이내 환불 요청시 적용됩니다)
+                        <br>가입하신 계정 확인을 위해 (마이윌라) → (게시판 문의) 로 환불 요청해주시면 확인 후 안내해드리겠습니다.
+                        <br>*환불 불가의 경우
+                        <br>1.멤버십 가입 후 이용내역이 있는 경우
+                        (가족 공유 서비스 이용 시, 초대받으신 분이 이용내역이 있으실 경우 환불이 불가합니다)
+                        <br>2.멤버십 무료 이용 기간인 경우
+                        <br>3.쿠폰 구매 후, 등록하신 경우
+                        <br>*단, 아이폰 결제의 경우 앱 스토어 정책으로 앱 스토어에서 환불을 진행해주셔야합니다.
+                        <br>*월간 환불 기준이며, 연간 환불의 기준은 상이할 수 있습니다.
+                    </p>
+                </li>
+            </ul>
         </div>
     </div>
 
     <!--푸터 영역-->
     <div class="main_footer" id="#footer">
-
+        <img src="images/footer.png" alt="">
     </div>
+
+
+    <!-- GSAP CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+        // 스크롤에 따른 표시 애니메이션
+        document.querySelectorAll('.scroll-spy').forEach((spyEl) => {
+            gsap.to(spyEl, {
+                scrollTrigger: {
+                    trigger: spyEl,
+                    start: "top 80%",
+                    toggleClass: {targets: spyEl, className: "show"},
+                    markers: false
+                }
+            });
+        });
+
+        // 풍선 이미지 부드럽게 움직이는 애니메이션
+        const balloon = document.querySelectorAll('.one');
+        const balloon2 = document.querySelectorAll('.two');
+        const balloon3 = document.querySelectorAll('.three');
+
+        // 위치 랜덤으로 정해주는거 3종류
+        function getRandomPosition() {
+            const x = Math.random() * 40 - 10;
+            const y = Math.random() * 40 - 10;
+            return { x, y };}
+        function getRandomPosition2() {
+            const x = Math.random() * 40 - 10;
+            const y = Math.random() * 40 - 10;
+            return { x, y };}
+        function getRandomPosition3() {
+            const x = Math.random() * 40 - 10;
+            const y = Math.random() * 40 - 10;
+            return { x, y };}
+
+        // 애니메이션 적용 3종류
+        function animateBalloon() {
+            const { x, y } = getRandomPosition();
+            gsap.to(balloon, {
+                x: x,
+                y: y,
+                duration: 2,
+                ease: "sine.out",
+                onComplete: animateBalloon // 애니메이션이 끝난 후 다시 호출
+            });
+        }
+        function animateBalloon2() {
+            const { x, y } = getRandomPosition2();
+            gsap.to(balloon2, {
+                x: x,
+                y: y,
+                duration: 2.3,
+                ease: "sine.out",
+                onComplete: animateBalloon2
+            });
+        }
+        function animateBalloon3() {
+            const { x, y } = getRandomPosition3();
+            gsap.to(balloon3, {
+                x: x,
+                y: y,
+                duration: 1.75,
+                ease: "sine.out",
+                onComplete: animateBalloon3
+            });
+        }
+        animateBalloon();
+        animateBalloon2();
+        animateBalloon3();
+
+
+        // 자동 스크롤링 배너
+        const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+        if (mediaQuery && !mediaQuery.matches) {
+            const tagScroller = document.querySelector(".tag-scroller");
+            const allTags = tagScroller.querySelectorAll("li");
+            
+            function createElement(tagName, className = "") {
+                const elem = document.createElement(tagName);
+                elem.className = className;
+                return elem;
+            }
+
+            function scrollersFrom(elements, numColumns = 2) {
+                const fragment = new DocumentFragment();
+                elements.forEach((element, i) => {
+                    const column = i % numColumns;
+                    const children = fragment.children;
+                    if (!children[column]) fragment.appendChild(createElement("ul", "tag-list"));
+                    children[column].appendChild(element);
+                });
+                return fragment;
+            }
+            
+            const scrollers = scrollersFrom(allTags, 3); // 스크롤되는 라인 수
+            tagScroller.innerHTML = "";
+            tagScroller.appendChild(scrollers);
+            addScrolling();
+
+            function addScrolling() {
+                tagScroller.classList.add("scrolling");
+                document.querySelectorAll(".tag-list").forEach((tagList) => {
+                    const scrollContent = Array.from(tagList.children);
+                    scrollContent.forEach((listItem) => {
+                        const clonedItem = listItem.cloneNode(true);
+                        clonedItem.setAttribute("aria-hidden", true);
+                        tagList.appendChild(clonedItem);
+                    });
+                    tagList.style.setProperty("--duration", (tagList.clientWidth / 100) + "s");
+                });
+            }
+        }
+
+        // 내비게이션 배경색 변경
+        document.addEventListener('DOMContentLoaded', function() {
+            const nav = document.querySelector('.h_nav');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) { // 스크롤 높이가 50px 이상일 때
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+        });
+
+        //faq 토글
+        document.addEventListener('DOMContentLoaded', () => {
+        const faqItems = document.querySelectorAll('.faq_list li');
+
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const paragraph = item.querySelector('p');
+                paragraph.classList.toggle('textshow');
+                });
+            });
+        });
+
+    </script>
+
+    <!--카드 3D 틸팅-->
+    <script type="text/javascript" src="tilt.js"></script>
 </body>
 </html>
