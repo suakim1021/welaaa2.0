@@ -17,6 +17,7 @@
     color: var(--welaaa-lightgray);
     background-color: var(--welaaa-green);}
 
+
 body {
     /*user-select: none;*/
 }
@@ -119,7 +120,8 @@ a {
     width: 496px;
     height: 78px;
     border-radius: 50px;
-    background-color: rgba(72, 74, 73, .9);
+    background-color: var(--welaaa-black);
+    /* background-image: linear-gradient(to bottom right, #56E893, #baff6b); */
     backdrop-filter: blur(15px);
     box-sizing: border-box;
     align-items: center;
@@ -132,12 +134,17 @@ a {
     cursor: pointer;
     z-index: 50;
     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     animation: ani_down 3s infinite ease-in-out;
 }
 .subscribe_button:hover {
     background-color: rgba(45, 46, 45, 1);
     animation-play-state: paused;
 }
+
 .subscribe_button h3 {
     font-family: Noto Sans KR;
     font-size: 24px;
@@ -265,22 +272,27 @@ a {
 
 /* 인덱스 더보기 버튼 설정 */
 .main_wrap .index .decoimg .indexbutton {
+    position: relative;
+
     font-size: 32px;
     font-weight: 500;
     color: #fff;
+
     background-color: var(--welaaa-black);
     border: none;
     border-radius: 50px;
     box-sizing: border-box;
     padding: 20px 33px;
     cursor: pointer;
-    position: relative;
+
     width: 80px; /* 기본 버튼 크기 */
     height: 80px; /* 기본 버튼 높이 */
+    
     transition: width 0.3s ease, height 0.3s ease; /* 크기 변화 애니메이션 */
     overflow: hidden; /* 넘치는 텍스트를 숨김 */
     display: flex;
     justify-content: center;
+    
 }
 .main_wrap .index .decoimg .indexbutton .icon {
     opacity: 1;
@@ -299,6 +311,7 @@ a {
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
 .main_wrap .index .decoimg .indexbutton:hover .icon {
     opacity: 0;
     visibility: hidden;
