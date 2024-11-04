@@ -338,11 +338,21 @@ a {
 
 
 /*세계 최초 윌라 개발 AI*/
-.main_wrap .aitts {
+.aitts {
     position: relative;
 }
+.aitts .deco1 {
+    position: absolute;
+    top: 200px;
+    left: 120px;
+}
+.aitts .deco2 {
+    position: absolute;
+    top: 330px;
+    right: 20px;
+}
 /*핸드폰 이미지/비디오 섹션*/
-.main_wrap .aitts .phoneimg {
+.aitts .phoneimg {
     position: absolute;
     top: 455px;
     left: 50%;
@@ -353,7 +363,7 @@ a {
     background-repeat: no-repeat;
     background-position: -10px -10px;
 }
-.main_wrap .aitts .phoneimg .videowrap {
+.aitts .phoneimg .videowrap {
     width: 1005px;
     height: 491px;
     background-color: var(--welaaa-gray);
@@ -363,39 +373,43 @@ a {
     margin-left: 24px;
     cursor: pointer;
 }
-.main_wrap .aitts .phoneimg .videowrap video {
+.aitts .phoneimg .videowrap video {
     width: 100%;
 }
 /*정보 카드*/
-.main_wrap .aitts .infocard {
+.aitts .infocard {
     width: 1400px;
     margin: 0 auto;
     padding-top: 720px;
     padding-bottom: 200px;
 }
-.main_wrap .aitts .infocard ul {
+.aitts .infocard ul {
     display: flex;
     justify-content: space-between;
 }
-.main_wrap .aitts .infocard ul li {
+.aitts .infocard ul li {
     width: 445px;
     height: 610px;
     border-radius: 25px;
     background-color: #fff;
     box-sizing: border-box;
     padding: 44px 47px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+
+    cursor: pointer;
 }
-.main_wrap .aitts .infocard ul li h3 {
+.aitts .infocard ul li h3 {
     font-size: 36px;
     font-weight: 800;
     line-height: 45px;
     margin-bottom: 17px;
     color: var(--welaaa-black);
 }
-.main_wrap .aitts .infocard ul li p {
+.aitts .infocard ul li p {
     font-size: 20px;
     font-weight: normal;
     color: var(--welaaa-gray);
+    margin-bottom: 50px;
 }
 
 .tilt2 {
@@ -538,43 +552,85 @@ a {
 }
 
 /*개선된 기능과 UI로 독서를 더 편하게!*/
+.uiux.section p {
+    margin-bottom: 70px;
+}
+/*스와이퍼*/
+.uiux .uiux_swiper {
+    width: 1400px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+.uiux .uiux_swiper .swiper .swiper-slide .box {
+    width: 1000px;
+    margin: auto;
+}
+.uiux .uiux_swiper .swiper .swiper-slide .box .swiper_title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--welaaa-black);
+    margin-top: 62px;
+}
+.uiux .uiux_swiper .swiper .swiper-slide .box .swiper_desc {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--welaaa-gray);
+    margin-top: 25px;
+    margin-bottom: 70px;
+}
+.swiper-button-next {
+    margin-right: 50px;
+}
+.swiper-button-prev {
+    margin-left: 50px;
+}
+.swiper-pagination {
+    margin-bottom: 445px;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--welaaa-darkgreen);
+}
+
 /*정보 카드*/
-.main_wrap .uiux .infocard {
+.uiux .infocard {
     width: 1400px;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 200px;
 }
-.main_wrap .uiux .infocard ul {
+.uiux .infocard ul {
     display: flex;
     justify-content: space-between;
 }
-.main_wrap .uiux .infocard ul li {
+.uiux .infocard ul li {
     width: 445px;
     height: 610px;
     border-radius: 25px;
     background-color: #fff;
     box-sizing: border-box;
     padding: 44px 47px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
 }
-/*카드 뒷배경*/
-.main_wrap .uiux .infocard ul li {
-    background-image: url(images/card_dummy.png);
-    background-size: cover;
-}
-.main_wrap .uiux .infocard ul li h3 {
+.uiux .infocard ul li h3 {
     font-size: 36px;
     font-weight: 800;
     line-height: 45px;
     margin-bottom: 17px;
     color: var(--welaaa-black);
 }
-.main_wrap .uiux .infocard ul li p {
+.uiux .infocard ul li p {
     font-size: 20px;
     font-weight: normal;
     color: var(--welaaa-gray);
 }
 
+/*콘텐츠 스와이퍼 섹션*/
 
 
 /*무료로 부담없이 시작해 보세요!*/
@@ -617,20 +673,172 @@ a {
     background-color: #fff;
     box-sizing: border-box;
     padding: 44px 47px;
+    cursor: pointer;
 }
-.main_wrap .membership .infocard ul li h3 {
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 45px;
-    margin-bottom: 17px;
+.label.red {
+    background-color: #F13B3B;
+}
+.label.gray {
+    background-color: var(--welaaa-gray);
+}
+.label.blue {
+    background-color: #219BFF;
+}
+.main_wrap .membership .infocard ul li .label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 8px 17px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+.main_wrap .membership .infocard ul li .membership_title {
+    font-size: 32px;
+    font-weight: 900;
     color: var(--welaaa-black);
+    margin-bottom: 26px;
 }
-.main_wrap .membership .infocard ul li p {
-    font-size: 20px;
-    font-weight: normal;
+.membership_title.red span {
+    color: #F13B3B;
+}
+.membership_title.gray span {
     color: var(--welaaa-gray);
 }
+.membership_title.blue span {
+    color: #219BFF;
+}
 
+.main_wrap .membership .infocard ul li .price1 {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--welaaa-gray);
+    margin-bottom: -20px;
+}
+.main_wrap .membership .infocard ul li .price1 span {
+    margin-left: 7px;
+    font-size: 40px;
+    font-weight: 800;
+    text-decoration: line-through;
+    color: #cdcdcd;
+}
+.main_wrap .membership .infocard ul li .price2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--welaaa-black);
+    margin-bottom: 100px;
+}
+.main_wrap .membership .infocard ul li .price2 span {
+    margin-left: 7px;
+    font-size: 64px;
+    font-weight: 800;
+}
+.main_wrap .membership .infocard ul li .notice {
+    font-size: 14px;
+    color: var(--welaaa-gray);
+    margin-bottom: 13px;
+}
+.main_wrap .membership .infocard ul li .notice span {
+    opacity: 0;
+}
+.main_wrap .membership .infocard ul li button {
+    width: 357px;
+    height: 76px;
+    border-radius: 40px;
+    border: none;
+    background-color: #cdcdcd;
+    color: var(--welaaa-gray);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    padding: 12px 52px;
+    
+    transition: .3s;
+}
+.main_wrap .membership .infocard ul li:hover .button.red button {
+    background-color: #F13B3B;
+    color: #fff;
+}
+.main_wrap .membership .infocard ul li:hover .button.gray button {
+    background-color: #484A49;
+    color: #fff;
+}
+.main_wrap .membership .infocard ul li:hover .button.blue button {
+    background-color: #219BFF;
+    color: #fff;
+}
+button {
+    cursor: pointer;
+}
+
+/*윌라 회원님들의 생생한 이용 후기를 확인하세요*/
+.review {
+    position: relative;
+    height: 1150px;
+}
+.review .deco3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.review .review_scrolling {
+    margin-top: 200px;
+}
+.review .review_scrolling ul {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.review .review_scrolling ul li {
+    flex: 0 0 auto; /* 너비가 부모 요소에 의해 조정되지 않도록 설정 */
+    min-width: 457px; /* 원하는 너비로 설정 */
+    margin-right: 30px;
+    position: relative;
+    height: 267px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+    border-radius: 25px;
+}
+.review .review_scrolling ul li .review_title {
+    position: absolute;
+    top: 35px;
+    left: 25px;
+
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--welaaa-black);
+}
+.review .review_scrolling ul li .review_desc {
+    width: 409px;
+    position: absolute;
+    top: 80px;
+    left: 25px;
+
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--welaaa-gray);
+}
+.review .review_scrolling ul li .profile {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+.review .review_scrolling ul li .profile .profile_img {
+    float: left;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: rgb(191, 191, 191);
+}
+.review .review_scrolling ul li .profile .profile_name {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 45px;
+    color: var(--welaaa-black);
+    margin-left: 10px;
+}
 
 /*자주 묻는 질문*/
 .main_wrap .faq {
