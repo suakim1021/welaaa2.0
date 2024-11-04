@@ -413,8 +413,91 @@
         </div>
 
         <!--콘텐츠 섹션-->
-        <div class="content section" id="#content">
-
+        <div class="content section scroll-spy" id="#content">
+                <div class="content_swiper magic-slide to-down">
+                    <div class="swiper2 mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="left_contentbox">
+                                    <img src="images/ico_green.png" alt="">
+                                    <div class="content_title">
+                                        오디오북
+                                    </div>
+                                    <div class="content_subtitle">
+                                        독서, 이제는 들을 시간.
+                                        <br>언제 어디서나 윌라하세요
+                                    </div>
+                                    <div class="content_desc">
+                                        서점에서 방금 본 최신간부터 윌라에서만 만날 수 있는 
+                                        <br>윌라 시그니처까지 모두 오디오북으로 만나보세요
+                                    </div>
+                                </div>
+                                <div class="right_contentbox">
+                                    <img src="images/phone_1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="left_contentbox">
+                                    <img src="images/ico_green.png" alt="">
+                                    <div class="content_title">
+                                        키즈관 · 웹소설
+                                    </div>
+                                    <div class="content_subtitle">
+                                        아이들을 위한 동화책부터
+                                        <br>킬링타임용 웹소설까지 듣다!
+                                    </div>
+                                    <div class="content_desc">
+                                        국내 1위 키즈 오디오북, 국내 최다 오디오 웹소설!
+                                        <br>오직 윌라에서만 만날 수 있는 압도적 컨텐츠입니다
+                                    </div>
+                                </div>
+                                <div class="right_contentbox">
+                                    <img src="images/phone_2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="left_contentbox">
+                                    <img src="images/ico_green.png" alt="">
+                                    <div class="content_title">
+                                        프리미엄 클래스
+                                    </div>
+                                    <div class="content_subtitle">
+                                        당신의 성공적인 커리어와
+                                        <br>행복한 일상을 위한 교육
+                                    </div>
+                                    <div class="content_desc">
+                                        기초 영어 회화부터 교수가 알려주는 특급 경제학 강의까지!
+                                        <br>매일매일 변화하는 나를 통해 자기계발의 즐거움을 느껴보세요
+                                    </div>
+                                </div>
+                                <div class="right_contentbox">
+                                    <img src="images/phone_3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="left_contentbox">
+                                    <img src="images/ico_green.png" alt="">
+                                    <div class="content_title">
+                                        전자책
+                                    </div>
+                                    <div class="content_subtitle">
+                                        언제 어디서든 간편하게
+                                        <br>윌라 하나에 담긴 책 17만권
+                                    </div>
+                                    <div class="content_desc">
+                                        매월 1만 권씩 업데이트되는 인기 베스트셀러와 윌라 독점
+                                        <br>도서! 동화책부터 소설, 취미 서적까지 풍부한 라인업
+                                    </div>
+                                </div>
+                                <div class="right_contentbox">
+                                    <img src="images/phone_4.png" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
         </div>
 
         <!--프로모션 섹션-->
@@ -931,6 +1014,25 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        });
+
+        // Swiper 설정2
+        const swiper2 = new Swiper('.swiper2', {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + "</span>";
+                },
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000, // 자동 재생 대기 시간 (ms)
+                disableOnInteraction: false, // 사용자가 인터랙션해도 자동 재생 유지
+            }
         });
 
 

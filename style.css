@@ -631,7 +631,61 @@ a {
 }
 
 /*콘텐츠 스와이퍼 섹션*/
+.content .content_swiper {
+    width: 100%;
+}
+.content .content_swiper .swiper-slide {
+    width: 1400px;
+    box-sizing: border-box;
+    padding: 148px 290px;
+}
+.content .content_swiper .swiper-slide .left_contentbox {
+    float: left;
+}
+.left_contentbox img {
+    margin-bottom: 25px;
+}
+.left_contentbox .content_title {
+    font-size: 64px;
+    font-weight: 800;
+    color: var(--welaaa-black);
+    margin-bottom: 10px;
+}
+.left_contentbox .content_subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--welaaa-gray);
+    margin-bottom: 225px;
+}
+.left_contentbox .content_desc {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--welaaa-black);
+}
+.content .content_swiper .swiper-slide .right_contentbox {
+    float: right;
+}
+.content .content_swiper .swiper-pagination {
+    margin-left: -545px;
+    margin-bottom: 280px;
+}
+.content .content_swiper .swiper-pagination-bullet {
+    border-radius: 20px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
 
+.content .content_swiper .swiper-pagination-bullet-active {
+    color: #fff;
+    background: var(--welaaa-darkgreen);
+  }
 
 /*무료로 부담없이 시작해 보세요!*/
 .main_wrap .pormotion .promo_img {
