@@ -228,6 +228,7 @@ a {
     width: 100%;
     height: 100vh;
     background-image: url(images/bg.png);
+    background-size: cover;
 }
 /*움직이는 음악 웨이브 효과*/
 .wave_wrap {
@@ -1022,6 +1023,9 @@ button {
 }
 
 /*footer*/
+.main_footer {
+    user-select: none;
+}
 .main_footer img {
     width: 100%;
 }
